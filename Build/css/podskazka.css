@@ -1,0 +1,6 @@
+.podskazka{max-width:300px;z-index:99;text-align:center;position:fixed;right:15px;bottom:20px;display:none;background:#fff;border-radius:7px;-webkit-box-shadow:0 3px 15px gray;-moz-box-shadow:0 3px 15px gray;box-shadow:0 3px 15px gray;-webkit-transition:.2s;transition:.2s}
+.podskazka p{padding:10px}
+.pdsk{font-style:italic;color:rgba(102,102,102,.9)}
+@media screen and (max-width: 737px) {
+.podskazka{border-radius:0;right:0;min-width:100%;margin:0}
+}

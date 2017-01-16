@@ -1,0 +1,116 @@
+h2{margin-right:12px;font-weight:400}
+.nameuser:hover{color:#000}
+.sn,.npr,.pr,.ser99a,.closdiv,.closdivser,.replyvopr,.ckb,.nameuser,.nenul,.vopros_add,.textvopr,.imgvopr,.attention{cursor:pointer}
+.zena{width:20px}
+input[type=checkbox],.dspn,.show_at_start{display:none}
+::-webkit-input-placeholder{text-align:center}
+:-moz-placeholder{text-align:center}
+::-moz-placeholder{text-align:center}
+:-ms-input-placeholder{text-align:center}
+.tp,.tpa,.textvopr,.st{width:90%}
+.mn{margin-left:5px}
+.icsv,.lh2{opacity:.6}
+.mt:hover .lh2,.mt:hover .icsv{opacity:1}
+.ect{fill:rgba(222,81,74,0.5)}
+.mt:hover .ect{fill:rgba(222,81,74,1)}
+.closdivser,.icsv{float:left}
+input[type=text],textarea,select{resize:none;border:1px solid rgba(102,102,102,.8);text-align:center}
+.da{fill:#fff;-webkit-transition:.5s;transition:.5s}
+.chbox{top:1px;left:5px;position:absolute;width:15px;height:15px;fill:#000}
+.sn:hover .da{fill:#000}
+input:checked + .sn .chbox,input:checked + .sn .da{fill:#000}
+input:checked + .sn .vvar{color:green}
+.sub_search,button,.addvopr_promo{padding:3px;background:rgba(64,130,109,1);width:9em;font-weight:700;color:#fff;border:1px solid rgba(64,130,109,1);-webkit-transition:.5s;transition:.5s;-webkit-box-shadow:0 3px 15px gray;-moz-box-shadow:0 3px 15px gray;box-shadow:0 3px 15px gray}
+.addvopr_promo{width:auto;display:inline-block;text-decoration:none;margin:5px;padding:3px 15px;cursor:pointer}
+.vopros_add{background:rgba(64,130,109,1)}
+.sub_search:hover,.vopros_add:hover,.addvopr_promo:hover{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;color:rgba(64,130,109,1)}
+.vopros_add:hover p{color:rgba(64,130,109,1)}
+.ava{border:solid 1px #ccc;float:left;margin:5px;margin-top:15px;width:50px;height:50px;position:relative}
+.imgava{width:100%;height:auto;max-height:48px}
+.ava:hover,.ava_tt:hover,.ava_ttm:hover{border:1px dashed rgba(102,102,102,1)}
+.ser2,.ser1,.ser3,.ser4,.ser5,.vopros_add,.vopros,.ser99{-webkit-box-shadow:0 3px 15px gray;-moz-box-shadow:0 3px 15px gray;box-shadow:0 3px 15px gray;border:1px solid #fff;-webkit-transition:.5s;transition:.5s}
+.ser2,.ser1,.ser3,.ser4,.ser5,.vopros,.ser99,.uverh:hover,.sub_search:hover,.vopros_add:hover,.addvopr_promo:hover,.totop{background:#fff}
+.vopros_add,select,textarea,input[type=text],.sub_search,button,.addvopr_promo,.ava,.vopros,.ser1,.ser2,.ser3,.ser4,.ser5,.ser99,.ser,.ava2,.totop{border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-khtml-border-radius:3px}
+.vopros_add{border:1px solid rgba(64,130,109,1)}
+.vopros,.vopros_add{position:relative;-ms-user-select:none;-moz-user-select:none;-khtml-user-select:none;margin-bottom:5px;-webkit-user-select:none}
+.addvoprv{margin-left:70px}
+.nameuser,.textvopr,.mt,.io{margin-left:15px}
+.textvopr{min-height:50px}
+.ckb{margin-left:25px}
+.sr,h1{margin-bottom:10px;white-space:nowrap}
+.tp,.tpa,.tpa99{border-bottom:1px solid #ccc}
+.tp{margin:3px 0 3px 15px}
+.st{margin-left:15px;padding:3px 0}
+.tpa,.tpa3{margin:3px 0}
+.tpa99{margin:3px 0 3px 10%;width:75%}
+.tpa4{margin:5px 0;border-bottom:1px solid #ccc;width:100%}
+.contentvopr{margin-left:60px}
+.otvop,.p_otvop,.n_otvop{margin:2px;padding:5px;width:48%}
+.otvop{border:1px solid #fff}
+.p_otvop{border:1px solid #40826d;background:rgba(64,130,109,.3)}
+.n_otvop{border:1px solid #de514a;background:rgba(222,81,74,.3)}
+.otvop:hover{border:1px solid rgba(102,102,102,1)}
+.vvar:hover{color:rgba(64,130,109,1)}
+textarea{height:90px}
+.imgvopr{max-width:50%;height:auto;margin-left:25px}
+.ser{margin-top:59px;position:absolute;z-index:50;left:5%;width:25%;border:1px solid transparent;padding:10px}
+.ser:hover{border:1px solid #b3b3b3}
+.ser:hover .closdivser{opacity:1}
+.fix{position:fixed;top:-10px!important}
+.podh2 li,.podh2 ul{list-style-type:none;list-style-image:url(../images/list.png);padding-left:0;margin-left:15px}
+.ser1,.ser2,.ser3,.ser4,.ser5,.ser99{position:relative;border:1px solid #fff;margin:0 0 10px}
+.ser1,.ser2,.ser3,.ser4,.ser5,.add2{padding:10px 5% 10px 10%}
+.ser99{margin:0 0 10px;padding:10px 0}
+.ser99a{margin-left:10%}
+.vopros_add p{color:#fff;margin:0}
+.sn{position:relative}
+.vopr_block{margin-left:31%;width:55%;margin-bottom:5%}
+.user_block{margin-left:33%;width:65%}
+.replyvopr{position:absolute;right:10px;top:34px;transform:rotate(-90deg);-moz-transform:rotate(-90deg);-webkit-transform:rotate(-90deg);-o-transform:rotate(-90deg)}
+.closdivser{top:-8px;left:-8px;opacity:0}
+.mtop{padding-top:70px}
+.uverh{background:transparent;position:fixed;z-index:90;height:100%;width:5%;top:0;left:0}
+.uverh:hover .strtp{opacity:.7}
+.strtp{background:url(../images/arrows.png) no-repeat;background-position:50% 50%;background-size:contain;transform:rotate(-90deg);-moz-transform:rotate(-90deg);-webkit-transform:rotate(-90deg);-o-transform:rotate(-90deg);bottom:60px;left:25%;height:20px;width:30px}
+.ui-effects-transfer{background:url(../images/account/admin.svg);background-repeat:no-repeat;background-position:50% 50%;background-size:contain;z-index:999}
+.fd,.fd50{margin:10px 0}
+.fd{display:block;width:100%;padding:0}
+.fd50{padding:0 10%;display:block;float:left;width:50%}
+.charts{position:relative;margin:30px 5%;padding:0}
+.sv,.replyvopr,.closdivser{width:16px;height:16px}
+.hov_d{opacity:0}
+.vopros:hover .hov_d,.srsr:hover .hov_d,.podskazka:hover .hov_d,.dm-modal:hover .hov_d{opacity:1}
+.is_mok{background:url(../images/mark_ok.png);background-repeat:no-repeat;background-position:50% 50%;background-size:cover;fill:rgba(64,130,109,1)}
+.is_n{background:url(../images/mark_not.png);background-repeat:no-repeat;background-position:50% 50%;background-size:cover;fill:rgba(222,81,74,1)}
+.direct{margin-bottom:8px}
+.varpoz{float:right;margin:2px}
+.ava_vk{position:absolute;left:21px;top:67px;width:20px;height:20px;background-color:gray;border-radius:3px}
+.ava_vk:hover{background-color:#4d7198}
+.vtop{left:7px;top:0}
+.svtop{fill:#eb9b32}
+.svtop:hover{fill:#de514a}
+.nettp{position:fixed;top:70px;right:-10%;width:8%;max-width:75px;outline:none;background:#fff;border-radius:3px;box-shadow:0 3px 15px gray}
+.ttop{right:5%}
+.ava_tt{width:30px;height:auto;border-radius:3px;border:solid 1px #ccc}
+.ava_ttm{width:50px;height:auto;border-radius:3px;box-shadow:0 3px 15px gray;border:solid 1px #ccc}
+.shadow{border:1px solid #eb9b32}
+#my_tt{width:75px;height:75px}
+.item{padding:5px 0;height:40px}
+.variant{width:165px}
+.skazka{background:-webkit-gradient(linear,left top,right top,color-stop(0.1,gray),color-stop(0.5,white),color-stop(0.9,gray));-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-animation:anim_m 13s linear;-webkit-animation-iteration-count:infinite;padding:0}
+.skazka:hover{background:-webkit-gradient(linear,left top,right top,color-stop(0.1,#eb9b32),color-stop(0.5,white),color-stop(0.9,#eb9b32));-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-animation:anim_m 13s linear;-webkit-animation-iteration-count:infinite;padding:0}
+@-webkit-keyframes anim_m {
+0%{background-position:-720px 0}
+100%{background-position:720px 0}
+}
+@media screen and (max-width:737px) {
+.mtop{padding-top:10px}
+.vopr_block{width:95%;margin-left:2.5%;margin-right:2.5%}
+.textvopr,.st{width:85%}
+.otvop{display:block;width:100%;margin-left:0;padding-left:0;border:1px solid #fff;-webkit-transition:.5s;transition:.5s}
+.fd,.fd50{margin:3px 0;padding:0;display:block;width:100%}
+textarea{height:30px;width:90%}
+.imgvopr{margin-left:5%;max-width:85%;height:auto}
+.mob{display:none}
+.hov_d{opacity:1}
+}

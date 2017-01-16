@@ -1,0 +1,19 @@
+.fhg{padding:0;margin-left:.5%;margin-right:.5%}
+.ramka{width:150px;height:150px;margin:0 auto;float:left;overflow:hidden;position:relative}
+.ssil{width:100%;height:100%;overflow:hidden;top:0;left:0}
+.ramka img{display:block;position:relative;width:100%;height:100%}
+.ramka h2{text-transform:uppercase;position:relative;font-size:13px;padding:5px 0;background:#fff;margin:20px 0 0}
+.ramka p{position:relative;padding-top:40px}
+.obolo img{transition:all .2s linear}
+.obolo .ssil{opacity:0;background:linear-gradient(to bottom,rgba(72,76,97,0) 0%,rgba(248,244,255,0.9) 65%);transition:all .6s ease-in-out}
+.obolo h2{transform:translateY(-100px);opacity:0;transition:all .4s ease-in-out}
+.obolo p{transform:translateY(150px);opacity:0;transition:all .4s linear}
+.obolo:hover img{transform:scale(1.3)}
+.obolo:hover .ssil{opacity:1}
+.obolo:hover h2,.obolo:hover p,.obolo:hover a{opacity:1;transform:translateY(10px)}
+.obolo:hover p{transition-delay:.2s}
+.mesto{top:100px;left:0;width:60px;height:28px;background-color:#fff;box-shadow:4px -2px 17px rgba(255,255,255,1);border-right:2px solid #fff;border-top:2px solid #fff;border-bottom:2px solid #fff}
+.mesto2{top:0px;left: 0px;width:100%;height:26px;background-color:#fff;box-shadow:4px -2px 17px rgba(255,255,255,1)}
+.mesto2:hover{background-color:rgba(64,130,109,1)}
+.mesto2:hover .m2{color:#fff}
+.obolo:hover .mesto{opacity:0;transition:all .2s linear}

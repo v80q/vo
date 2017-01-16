@@ -1,0 +1,29 @@
+body,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,fieldset,textarea,p,blockquote,th,td,b{font-family:Verdana,Georgia;padding:0;margin:0;color:#000;-webkit-box-sizing:border-box;-o-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-moz-hyphens:auto;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}
+h1{padding:30px;font-size:18px;color:rgba(64,130,109,1)}
+body{background:#dbdbdb}
+p{text-align:left;padding:4px}
+a{font-size:14px;font-weight:700;color:#000;text-decoration:none}
+a:hover{border-bottom:1px dashed rgba(222,81,74,1);color:rgba(222,81,74,1);-webkit-transition:.2s;transition:.2s}
+.block{padding-top:70px}
+#site_map{-webkit-box-shadow:0 3px 15px gray;-moz-box-shadow:0 3px 15px gray;box-shadow:0 3px 15px gray;border:1px solid #fff;background:#fff;padding-bottom:20px;text-align:center;margin-left:37%;width:56.75%}
+.padd,.dspn{text-align:left;padding:0 35px}
+.tpa{margin:6px 0;border-bottom:1px solid #CCC;width:100%}
+.arr{float:left;margin-top:8px;margin-left:-20px;width:10px;height:10px;background:url(../images/arrows.png);background-position:50% 50%;background-size:contain;opacity:.5;cursor:pointer;-webkit-transition:.5s;transition:.5s}
+.arrup{transform:rotate(0deg);-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);-o-transform:rotate(0deg)}
+.arrdown{transform:rotate(90deg);-moz-transform:rotate(90deg);-webkit-transform:rotate(90deg);-o-transform:rotate(90deg)}
+.dspn,.ndspn{border-left:1px dotted #CCC;display:none}
+.ndspn{display:block}
+.ser99{-webkit-box-shadow:0 3px 15px gray;-moz-box-shadow:0 3px 15px gray;box-shadow:0 3px 15px gray;border:1px solid #fff;-webkit-transition:.5s;transition:.5s;background:#fff;position:relative;border-radius:2px;border:1px solid #fff;margin:0 0 10px}
+.ser99:hover{border:1px solid rgba(102,102,102,.8);-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}
+.ser{font-size:12.5px;margin-top:-11px;position:absolute;z-index:50;left:8.3%;width:25%;border:1px solid transparent;padding:10px;-webkit-transition:.5s;transition:.5s}
+.ser:hover{border:1px solid #ccc}
+.ser:hover .closdivser{opacity:1}
+.closdivser{position:absolute;top:-10px;left:-10px;opacity:0;float:left;fill:#b3b3b3;-webkit-transition:.5s;transition:.5s;width:16px;height:16px;cursor:pointer}
+.closdivser:hover{fill:#000;color:#000}
+.srsr:hover .hov_d{opacity:.6}
+.srsr .hov_d:hover{opacity:1}
+.nameuser{text-decoration:none;font-size:12.5px;color:rgba(102,102,102,1);font-weight:700;-webkit-transition:.5s;transition:.5s;font-weight:bold;margin-left:15px;cursor:pointer}
+.nameuser:hover{color:#000}
+.closdiv{top:10px;position:absolute;right:10px;width:16px;height:16px;cursor:pointer}
+.direct{margin:14px}
+.sr a{font-size:12.5px;margin-top:10px;margin-bottom:10px;font-weight:700;color:rgba(64,130,109,1)}
