@@ -1,0 +1,48 @@
+ServerSignature Off
+AddDefaultCharset utf-8
+php_value mbstring.internal_encoding UTF-8
+php_value default_charset utf-8
+php_value session.gc_maxlifetime 172800
+php_flag register_globals off
+RemoveHandler .html .htm
+AddType application/x-httpd-php .php .htm .html .phtml
+
+RewriteEngine On
+# RewriteCond %{HTTP_HOST}  ^www(.*) [NC]
+# RewriteRule ^(.*)$ http://90.156.143.64/ready/$1 [R=301,L]
+
+# RewriteCond %{HTTP:PORT} !^443$
+# RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+# RewriteRule ^index\.php$ http://90.156.143.64/ready/ [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+RewriteRule ^.*Карта_сайта$ site_map.php
+
+RewriteRule ^.*Рекламный_вопрос$ lib/promo_suc.php
+
+RewriteRule ^.*Контакты$ kont.php
+
+RewriteRule ^.*Личный_кабинет$ ac_p.php
+
+RewriteRule ^.*Мои_вопросы$ all_v.php?my=1 [QSA]
+
+RewriteRule ^.*Вопросы$ all_v.php
+
+RewriteRule ^.*Участники$ all_u.php
+
+RewriteRule ^.*Диплом/(.*)$ dp.php?dip=$1 [QSA]
+
+RewriteRule ^.*Выйти$ lib/logout.php
+
+RewriteRule ^.*Участники/Все_вопросы/(.*)$ all_v.php?log_user=$1 [QSA]
+
+RewriteRule ^.*Вопросы/(.*)/([0-9]+)$ all_v.php?name_c=$1&id=$2 [QSA]
+RewriteRule ^.*Вопросы/(.*)$ all_v.php?name_c=$1
+
+RewriteRule ^.*Политика_конфиденциальности$ police.php [QSA]
+RewriteRule ^.*Правила_пользования$ polit.php [QSA]
+
+RewriteRule ^.*Вход/ВКонтакте$ /lib/login_smm/vk.php
+
+RewriteRule ^.*Админ/(.*)$ lib/login_smm/ad.php?id=$1 [QSA]

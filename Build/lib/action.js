@@ -1,15 +1,15 @@
-function like_add(vopr_id){$.post('/lib/add_like.php',{vopr_id:vopr_id},function(data){if(data='success'){like_get(vopr_id)}})}
-function like_get(vopr_id){$.post('/lib/get_like.php',{vopr_id:vopr_id},function(data){$('#like_'+vopr_id+'_id').text(data);$('#l_'+vopr_id+'_i').css({'fill':'rgb(222,81,74)'})})}
-function jalo_add(vopr_id){$.post('/lib/add_jalob.php',{vopr_id:vopr_id},function(data){if(data='success'){jalo_get(vopr_id)}})}
-function jalo_get(vopr_id){$.post('/lib/get_jalob.php',{vopr_id:vopr_id},function(data){$('#jalo_'+vopr_id+'_id').text(data);$('#j_'+vopr_id+'_i').css({'fill':'rgb(222,81,74)'})})}
-function count_v(){rty=$('#rty');rty.hide().stop();$.post({url:'/lib/load_count_v.php',data:{'id':$('.nomer').val(),'log_user':$('.log_user').val(),'name_r':$('.name_r:checked').val(),'name_c':$('#name_c').val(),'sText':$('.sText').val(),'minPrice':$('.minPrice').val(),'maxPrice':$('.maxPrice').val(),'myv':$('#myv').text()},success:function(data) {rty.text(data);}});rty.fadeTo(300,1);}
-function load_v(){netvoprosov=$('#netvoprosov').length;vopr_block=$('.vopr_block');nomer=$('.nomer').val();loadImg=$("#loadImg");if(!netvoprosov&!nomer) {$.post({url:'/lib/load_vopr.php',data:{'add':window.add,'log_user':$('.log_user').val(),'name_r':$('.name_r:checked').val(),'id':nomer,'name_c':$('#name_c').val(),'sText':$('.sText').val(),'minPrice':$('.minPrice').val(),'maxPrice':$('.maxPrice').val(),'myv':$('#myv').text()},beforeSend:function() {loadImg.fadeTo(300,1);load=true;},success:function(data) {loadImg.detach();vopr_block.append(data);$('.vopros:hidden').each(function(i) {$(this).delay((i++) * 50).fadeTo(100,1);});load=false;add += 10;}});}}
-function show_ac(login_p){$.post({url:'/lib/page_acc.php',data:{login_p:login_p},success:function(data){$('body').append(data);$('#page_acc').fadeTo(100,1)}})}
-function show_ot(selector,id){$.post({url:'/lib/page_otv.php',data:{selector:selector,id:id},success:function(data){$('body').append(data);$('#page_otv').fadeTo(100,1)}})}
-function send_comment(){if($('#name_comment').val()!=''&$('#text_comment').val()!=''&$('#mail_comment').val()!='') {$.post({url:'/lib/send_comment.php',data:{'name_comment':$('#name_comment').val(),'text_comment':$('#text_comment').val(),'mail_comment':$('#mail_comment').val(),},success:function(data) {$('body').append(data);$('#text_comment').val(''),$('#send_com').fadeTo(100,1);}});}else {$("#req").fadeTo(300,1);}}
+function like_add(vopr_id){$.post('add_like.php',{vopr_id:vopr_id},function(data){if(data='success'){like_get(vopr_id)}})}
+function like_get(vopr_id){$.post('get_like.php',{vopr_id:vopr_id},function(data){$('#like_'+vopr_id+'_id').text(data);$('#l_'+vopr_id+'_i').css({'fill':'rgb(222,81,74)'})})}
+function jalo_add(vopr_id){$.post('add_jalob.php',{vopr_id:vopr_id},function(data){if(data='success'){jalo_get(vopr_id)}})}
+function jalo_get(vopr_id){$.post('get_jalob.php',{vopr_id:vopr_id},function(data){$('#jalo_'+vopr_id+'_id').text(data);$('#j_'+vopr_id+'_i').css({'fill':'rgb(222,81,74)'})})}
+function count_v(){rty=$('#rty');rty.hide().stop();$.post({url:'load_count_v.php',data:{'id':$('.nomer').val(),'log_user':$('.log_user').val(),'name_r':$('.name_r:checked').val(),'name_c':$('#name_c').val(),'sText':$('.sText').val(),'minPrice':$('.minPrice').val(),'maxPrice':$('.maxPrice').val(),'myv':$('#myv').text()},success:function(data) {rty.text(data);}});rty.fadeTo(300,1);}
+function load_v(){netvoprosov=$('#netvoprosov').length;vopr_block=$('.vopr_block');nomer=$('.nomer').val();loadImg=$("#loadImg");if(!netvoprosov&!nomer) {$.post({url:'load_vopr.php',data:{'add':window.add,'log_user':$('.log_user').val(),'name_r':$('.name_r:checked').val(),'id':nomer,'name_c':$('#name_c').val(),'sText':$('.sText').val(),'minPrice':$('.minPrice').val(),'maxPrice':$('.maxPrice').val(),'myv':$('#myv').text()},beforeSend:function() {loadImg.fadeTo(300,1);load=true;},success:function(data) {loadImg.detach();vopr_block.append(data);$('.vopros:hidden').each(function(i) {$(this).delay((i++) * 50).fadeTo(100,1);});load=false;add += 10;}});}}
+function show_ac(login_p){$.post({url:'page_acc.php',data:{login_p:login_p},success:function(data){$('body').append(data);$('#page_acc').fadeTo(100,1)}})}
+function show_ot(selector,id){$.post({url:'page_otv.php',data:{selector:selector,id:id},success:function(data){$('body').append(data);$('#page_otv').fadeTo(100,1)}})}
+function send_comment(){if($('#name_comment').val()!=''&$('#text_comment').val()!=''&$('#mail_comment').val()!='') {$.post({url:'send_comment.php',data:{'name_comment':$('#name_comment').val(),'text_comment':$('#text_comment').val(),'mail_comment':$('#mail_comment').val(),},success:function(data) {$('body').append(data);$('#text_comment').val(''),$('#send_com').fadeTo(100,1);}});}else {$("#req").fadeTo(300,1);}}
 function open_vopr(vopr_id){$('#close_'+vopr_id).slideToggle(300),pdskFade(vopr_id)}
-function show_error(id){$.post({url:'/lib/promo02.php',data:{id:id},success:function(data){$('body').append(data);$('#promo02').fadeTo(100,1)}})}
-function sh_rat(num){$.post({url:'/lib/page_rat.php',data:{num:num},success:function(data){$('body').append(data);$('#sh_rat').fadeTo(100,1)}})}
+function show_error(id){$.post({url:'promo02.php',data:{id:id},success:function(data){$('body').append(data);$('#promo02').fadeTo(100,1)}})}
+function sh_rat(num){$.post({url:'page_rat.php',data:{num:num},success:function(data){$('body').append(data);$('#sh_rat').fadeTo(100,1)}})}
 $(function() {
 	add=0;
 	ld=false;
@@ -31,7 +31,7 @@ function pdskFade(vopr_id) {
 	if(!$('#close_'+vopr_id).children('#'+vopr_id+'_otv1').length>0 && $('#skazka_'+vopr_id).children('.mn').length>0) {
 		$('#skazka_'+vopr_id).children('.mn').detach();
 	}
-	else $.post({url:'/lib/action/sk.php',success:function(data){$('#skazka_'+vopr_id).append(data),$('#skazka_'+vopr_id).children('.mn').fadeTo(500,1)}})
+	else $.post({url:'action/sk.php',success:function(data){$('#skazka_'+vopr_id).append(data),$('#skazka_'+vopr_id).children('.mn').fadeTo(500,1)}})
 }
 function otv_get(vopr_id,otv_id){
 	pdsk=0;
@@ -40,7 +40,7 @@ function otv_get(vopr_id,otv_id){
 	z=$('.zifra');
 	r=$('.rating');
 	$.post({
-		url:"/lib/prov_otv.php",
+		url:"prov_otv.php",
 		data:{otv_id:otv_id,vopr_id:vopr_id,pdsk:pdsk},
 		dataType:"json",
 		success:function(data){
@@ -57,7 +57,7 @@ function otv_get(vopr_id,otv_id){
 			else false}});
 	totop();		
 }
-function totop(){$.post({url:'/lib/action/totop.php',dataType:"json",success:function(data){
+function totop(){$.post({url:'action/totop.php',dataType:"json",success:function(data){
    $.each(data, function() {
 		$.each(this, function(n,v) {
 			if(!$('#tt'+n).children('#'+v.id).length>0) {

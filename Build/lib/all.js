@@ -1,6 +1,6 @@
 function del_bl(id_div){$(id_div).detach()}
-function show(file,app){$.ajax({url:'/lib/'+file+'.php',success:function(data) {$(''+app+'').append(data);$('#'+file).fadeTo(100,1)}})}
-function send_comment(){if($('#name_comment').val()!=''&$('#text_comment').val()!=''&$('#mail_comment').val()!='') {$.post({url:'/lib/send_comment.php',data:{'name_comment':$('#name_comment').val(),'text_comment':$('#text_comment').val(),'mail_comment':$('#mail_comment').val(),},success:function(data) {$('body').append(data);$('#text_comment').val(''),$('#send_com').fadeTo(100,1);}});}else {$("#req").fadeTo(300,1);}}
+function show(file,app){$.ajax({url:'lib/'+file+'.php',success:function(data) {$(''+app+'').append(data);$('#'+file).fadeTo(100,1)}})}
+function send_comment(){if($('#name_comment').val()!=''&$('#text_comment').val()!=''&$('#mail_comment').val()!='') {$.post({url:'lib/send_comment.php',data:{'name_comment':$('#name_comment').val(),'text_comment':$('#text_comment').val(),'mail_comment':$('#mail_comment').val(),},success:function(data) {$('body').append(data);$('#text_comment').val(''),$('#send_com').fadeTo(100,1);}});}else {$("#req").fadeTo(300,1);}}
 function uvh(){$('body,html').scrollTop(0),$('.uverh').addClass('dspn')}
 function open_search(id){$('#clser_'+id).slideToggle(300,function(){$('#arr_'+id).toggleClass("arrdown","arrup")})}
 $(function() {
@@ -16,4 +16,4 @@ $(document).click(function(event) {
 	del_bl('.dm-overlay');
     event.stopPropagation();
 });
-function pay(attr){$.post({url:'/lib/pay.php',data:{attr:attr},success:function(data){$('body').append(data);$('#pay').fadeTo(100,1)}})}
+function pay(attr){$.post({url:'lib/pay.php',data:{attr:attr},success:function(data){$('body').append(data);$('#pay').fadeTo(100,1)}})}

@@ -1,7 +1,7 @@
 <?php
 	session_start();
-	require_once "lib/function.php";
-	require_once "lib/counters.php";
+	require_once "function.php";
+	require_once "counters.php";
 	if($_GET['login']) {
 		$login_p_inf = GetLogP($_GET['login']);
 		if($login_p_inf) {

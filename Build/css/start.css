@@ -1,12 +1,12 @@
 body,dl,dt,dd,h1,h2,h3,h4,h5,h6,a,div,pre,form,fieldset,textarea,p,blockquote,th,td,b,li{font-family:Verdana,Georgia;padding:0;margin:0;box-sizing:border-box;outline:none}
 #l_vk,#l_ok,#l_fb{margin:3px;width:40px;height:40px;display:inline-block;background-color:rgba(102,102,102,1);background-size:cover;background-position:center center;background-repeat:no-repeat}
-#l_vk{background-image:url(/images/Mezhdunarodny_logotip_VK.png)}
-#l_ok{background-image:url(/images/ok_logo_sign_orange.png)}
-#l_fb{background-image:url(/images/FB-f-Logo__blue_512.png)}
+#l_vk{background-image:url(../images/Mezhdunarodny_logotip_VK.png)}
+#l_ok{background-image:url(../images/ok_logo_sign_orange.png)}
+#l_fb{background-image:url(../images/FB-f-Logo__blue_512.png)}
 #l_ok:hover{background-color:#fa981a}
 #l_vk:hover{background-color:#4d7198}
 #l_fb:hover{background-color:#3b579d}
-#akz{position:fixed;background-image:url(/images/5d.png);left:3%;top:20px;width:300px;height:215px;background-size:cover;background-position:center center;background-repeat:no-repeat;z-index:500;opacity:0}
+#akz{position:fixed;background-image:url(../images/5d.png);left:3%;top:20px;width:300px;height:215px;background-size:cover;background-position:center center;background-repeat:no-repeat;z-index:500;opacity:0}
 ::-webkit-scrollbar-button{display:none}
 ::-webkit-scrollbar-track{background-color:#dbdbdb;border-left:2px solid #fff;border-right:2px solid #fff}
 ::-webkit-scrollbar-thumb{-webkit-border-radius:3px;border-radius:3px;background-color:rgba(64,130,109,1);border:1px solid #fff}

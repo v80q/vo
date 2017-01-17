@@ -9,9 +9,9 @@ body,dl,dt,dd,h1,h2,h3,h4,h5,h6,a,div,pre,form,fieldset,textarea,p,blockquote,th
 .police,.polic{padding:0;margin:0;text-decoration:underline;font-size:13px;color:rgba(222,81,74,1)}
 .log_smm{margin:3px;width:40px;height:40px;display:inline-block;background-color:rgba(102,102,102,1);background-size:cover;border-radius:3px;background-position:center center;background-repeat:no-repeat}
 .share_smm{margin:1px;width:25px;height:25px;display:inline-block;background-color:rgba(102,102,102,1);background-size:cover;border-radius:3px;background-position:center center;background-repeat:no-repeat}
-#l_vk{background-image:url(/images/Mezhdunarodny_logotip_VK.png)}
-#l_ok{background-image:url(/images/ok_logo_sign_orange.png)}
-#l_fb{background-image:url(/images/FB-f-Logo__blue_512.png)}
+#l_vk{background-image:url(../images/Mezhdunarodny_logotip_VK.png)}
+#l_ok{background-image:url(../images/ok_logo_sign_orange.png)}
+#l_fb{background-image:url(../images/FB-f-Logo__blue_512.png)}
 #l_ok:hover,.l_ok{background-color:#fa981a}
 #l_vk:hover,.l_vk{background-color:#4d7198}
 #l_fb:hover,.l_fb{background-color:#3b579d}

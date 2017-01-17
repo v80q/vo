@@ -74,10 +74,10 @@
 	}
 	
 	function connectDB() {
-		$mysqli=new mysqli("u435735.mysql.masterhost.ru", "u435735", "c5p7eSS..En", "u435735_vik");
+		$mysqli=new mysqli("90.156.143.64", "p8080q", "qwe123qwe123", "vik");
 		$mysqli->query("SET NAMES utf8");
 		return $mysqli; 
-		//return new mysqli("u435735.mysql.masterhost.ru", "u435735", "c5p7eSS..En", "u435735_vik");
+		//return new mysqli("90.156.143.64", "p8080q", "qwe123qwe123", "vik");
 		//$mysqli->query("SET NAMES utf-8");
                 //$mysqli->query("SET NAMES CP1251");
 		//$mysqli->query("SET SESSION collation_connection='utf8'");

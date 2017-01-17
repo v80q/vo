@@ -1,7 +1,7 @@
 <?php
 	session_start();
-	require_once "/home/u435735/xn--80adsajtfqq.xn--80asehdb/www/lib/function.php";
-	require_once "/home/u435735/xn--80adsajtfqq.xn--80asehdb/www/lib/counters.php";
+	require_once "function.php";
+	require_once "counters.php";
 	$login_inf = GetLogP($_SESSION['login']);
 	$img="/home/u435735/xn--80adsajtfqq.xn--80asehdb/www/lib/diplom/diplo.jpg";
 	$pic = ImageCreateFromjpeg($img);

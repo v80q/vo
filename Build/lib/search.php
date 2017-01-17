@@ -1,7 +1,7 @@
 <?
 	session_start();
-	require_once "/home/u435735/xn--80adsajtfqq.xn--80asehdb/www/lib/function.php";
-	require_once "/home/u435735/xn--80adsajtfqq.xn--80asehdb/www/lib/counters.php";
+	require_once "function.php";
+	require_once "counters.php";
 ?>
 <p class="sr fwb green help" title="Используйте поиск для отображения вопросов по Вашим критериям">Поиск<?if($_GET['my']) {?><span id="myv"> по моим вопросам</span><?}?></p>
 <form method="POST" action="/Вопросы" id="search_form">

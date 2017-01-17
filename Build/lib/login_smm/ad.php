@@ -1,7 +1,7 @@
 <?
 	session_start();
-	require_once "/home/u435735/xn--80adsajtfqq.xn--80asehdb/www/lib/function.php";
-	require_once "/home/u435735/xn--80adsajtfqq.xn--80asehdb/www/lib/counters.php";
+	require_once $_SERVER['DOCUMENT_ROOT']."/lib/function.php";
+	require_once $_SERVER['DOCUMENT_ROOT']."/lib/counters.php";
 	if($_GET['id']) {
 		$id_user = $_GET['id'];
 		$id_user = GetNameP($id_user);

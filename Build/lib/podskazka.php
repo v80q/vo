@@ -12,11 +12,11 @@ $(function() {
 	show_podskaz(sp);
 });
 function not() {
-	$.post({url:'/lib/podskazka_obr.php',data:{'nepokaz':1},success:function(data){}});		
+	$.post({url:'lib/podskazka_obr.php',data:{'nepokaz':1},success:function(data){}});		
 }
 function show_podskaz(sp) {
 	setTimeout(function() {
-		$.post({url:'/lib/podskazka_obr.php',data:{id_pod:sp},success:function(data){$('body').append(data);$('#p_'+sp).fadeTo(200,.9)}})
+		$.post({url:'lib/podskazka_obr.php',data:{id_pod:sp},success:function(data){$('body').append(data);$('#p_'+sp).fadeTo(200,.9)}})
 		$('.podskazka').hover(function(){
 			$(this).fadeTo(200,1);
 		});

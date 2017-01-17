@@ -1,7 +1,7 @@
 <?
 	session_start();
-	require_once "/home/u435735/xn--80adsajtfqq.xn--80asehdb/www/lib/function.php";
-	require_once "/home/u435735/xn--80adsajtfqq.xn--80asehdb/www/lib/counters.php";
+	require_once "function.php";
+	require_once "counters.php";
 	if($_POST['login_p']) {
 		$login_p = $_POST['login_p'];
 		$login_p = GetLogP($login_p);

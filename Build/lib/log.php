@@ -1,4 +1,5 @@
-<?	session_start();
+<?
+	session_start();
 	require_once "function.php";
 	require_once "counters.php";
 ?>
@@ -8,8 +9,8 @@
 <p class="fwb fs16 green">Авторизуйтесь с помощью одной из соцсетей</p>
 <p class="gray fs12 fwb p10">Отвечая на вопросы, каждый участник зарабатывает очки. Авторизация требуется для идентификации участника и размещения его в рейтинге победителей</p>
 <p class="soc w100">
-<a id="l_vk" class="trans log_smm" title="Авторизация через ВКонтакте" href="<?=$url.'?'.urldecode(http_build_query($params));?>"></a>
-<a id="l_ok" class="trans log_smm" title="Авторизация через Одноклассники" href="<?=$url_ok.'?'.urldecode(http_build_query($params_ok));?>"></a>
+<a id="l_vk" class="trans log_smm" title="Авторизация через ВКонтакте" href="<?echo $url.'?'.urldecode(http_build_query($params));?>"></a>
+<a id="l_ok" class="trans log_smm" title="Авторизация через Одноклассники" href="<?echo $url_ok.'?'.urldecode(http_build_query($params_ok));?>"></a>
 <a id="l_fb" class="trans log_smm" title="Авторизация через Facebook временно недоступна"></a>
 </p>
 <div class="p10"><a href="/Политика_конфиденциальности" class="tdn bb bbt green fs10 fwb">Политика конфиденциальности</a></br><a href="/Правила_пользования" class="tdn bb bbt green fs10 fwb">Правила пользования сайтом</a></div></div></div></div></div></div>

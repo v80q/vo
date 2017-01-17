@@ -1,7 +1,7 @@
 <?
 	session_start();
-	require_once "/home/u435735/xn--80adsajtfqq.xn--80asehdb/www/lib/function.php";
-	require_once "/home/u435735/xn--80adsajtfqq.xn--80asehdb/www/lib/counters.php";
+	require_once "function.php";
+	require_once "counters.php";
 		$add=0;
 		$id_u = GetLogP($_SESSION['login']);
 		$user_inf = GetInf($_SESSION['login']);
@@ -133,7 +133,7 @@ else {
 <?
 if($item['vk'] == 1) {
 	echo "<a href='https://vk.com/question.online' title='Вопрос задан участником из приложения ВКонтакте. Если участник, задавший вопрос, не прошёл авторизацию на сайте, вопросы публикуются от имени администратора'>";
-	echo "<img class='ava_vk trans' alt='Приложение ВКонтакте' src='https://xn--80adsajtfqq.xn--80asehdb/images/Mezhdunarodny_logotip_VK.png' />";
+	echo "<img class='ava_vk trans' alt='Приложение ВКонтакте' src='/images/Mezhdunarodny_logotip_VK.png' />";
 	echo "</a>";
 }
 ?>
@@ -243,4 +243,4 @@ $coauth2=SummOtvCoauth2($summa);
 </div>
 </div>
 <? } ?>
-<img id="loadImg" class="trans dspn" alt="Загрузка" src="https://xn--80adsajtfqq.xn--80asehdb/images/ajax-loader.gif" />
+<img id="loadImg" class="trans dspn" alt="Загрузка" src="/images/ajax-loader.gif" />
