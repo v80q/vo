@@ -1,0 +1,3 @@
+<a class='r_bl dib trans cur dspn' title="Обнулить очки" onclick="pay('1')" id="obnul_but">
+	<span style="background:-webkit-gradient(linear,left top,right top,color-stop(0.1,#40826d),color-stop(0.5,white),color-stop(0.9,#40826d));-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-animation:anim_m 13s linear;-webkit-animation-iteration-count:infinite" class="t fs12 green" ><span class="bb bbt ">ОБНУЛИТЬ</span><div class="obn r_bl"></div></span>
+</a>

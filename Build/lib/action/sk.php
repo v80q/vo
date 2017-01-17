@@ -1,0 +1,1 @@
+<a class="mn dspn" onclick="show('pdsk','body')"><span class="cur bb bbt lh skazka fwb" title="Скоро тут будет подсказка!">ПОДСКАЗКА</span></a>

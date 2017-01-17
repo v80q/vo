@@ -42,10 +42,6 @@ body,dl,dt,dd,h1,h2,h3,h4,h5,h6,a,div,pre,form,fieldset,textarea,p,blockquote,th
 body{background:#dbdbdb}
 #first{text-shadow:0 3px 15px #fff}
 #seo{margin-left:10%}
-@media screen and (max-width: 737px) {
-h1{font-size:27px}
-.mob{display:none}
-}
 .fs10{font-size:10px}
 .fs14{font-size:14px}
 .fs12{font-size:12px}
@@ -67,3 +63,7 @@ h1{font-size:60px}
 .map,.name{margin:3px}
 .hb a{display:block;float:right}
 .ht a:hover,.hb a:hover{color:rgba(222,81,74,1)}
+@media screen and (max-width: 737px) {
+h1{font-size:27px}
+.mob{display:none}
+}
