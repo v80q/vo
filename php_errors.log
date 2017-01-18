@@ -217,3 +217,11 @@
 [17-Jan-2017 14:25:36 UTC] PHP Stack trace:
 [17-Jan-2017 14:25:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/Build/all_v.php:0
 [17-Jan-2017 14:25:36 UTC] PHP   2. include() /home/ubuntu/workspace/Build/all_v.php:202
+[18-Jan-2017 13:51:38 UTC] PHP Warning:  require_once(../lib/function.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Build/lib/action/liney.php on line 3
+[18-Jan-2017 13:51:38 UTC] PHP Stack trace:
+[18-Jan-2017 13:51:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/Build/all_v.php:0
+[18-Jan-2017 13:51:38 UTC] PHP   2. include() /home/ubuntu/workspace/Build/all_v.php:202
+[18-Jan-2017 13:51:38 UTC] PHP Fatal error:  require_once(): Failed opening required '../lib/function.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Build/lib/action/liney.php on line 3
+[18-Jan-2017 13:51:38 UTC] PHP Stack trace:
+[18-Jan-2017 13:51:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/Build/all_v.php:0
+[18-Jan-2017 13:51:38 UTC] PHP   2. include() /home/ubuntu/workspace/Build/all_v.php:202
