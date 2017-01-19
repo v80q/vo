@@ -11,11 +11,10 @@
 <meta name="description" content="Правила пользования Сайтом Викторина.Онлайн">	
 <title>Правила cайтa Викторина.Онлайн</title>
 <link rel="stylesheet" type="text/css" href="css/all.css" />
-<script src="/js/jquery-1.12.2.min.js"></script>
-<script src="/lib/all.js"></script>
-<script src="/lib/action.js"></script>	
-<link rel="shortcut icon" href="/images/favicon.png" />
-<?php require_once "lib/countersm.php";?>
+<script src="js/jquery-1.12.2.min.js"></script>
+<script src="lib/all.js"></script>
+<script src="lib/action.js"></script>	
+<link rel="shortcut icon" href="images/favicon.png" />
 </head>
 <? require_once "lib/main.menu.php"; ?>
 <div class="uverh trans cur dspn" onclick="uvh()"><div class="strtp trans op05 pa"></div></div>
