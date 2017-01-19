@@ -1,7 +1,7 @@
 <?
 	session_start();
-	require_once "../lib/function.php";
-	require_once "../lib/counters.php";
+	require_once "lib/function.php";
+	require_once "lib/counters.php";
 	if($_SESSION['login']) {
 		$id_u = GetLogP($_SESSION['login']);
 		if(!$id_u[0]['image']) {
