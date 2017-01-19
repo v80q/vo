@@ -8,7 +8,7 @@
 ?>
 <script>
 $(function() {
-	var sp = <?=$_SESSION['num_podsk']?>;
+	var sp = <?echo $_SESSION['num_podsk']?>;
 	show_podskaz(sp);
 });
 function not() {

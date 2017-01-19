@@ -14,12 +14,12 @@
 <?	if($categ) :?>
 <?  foreach($categ as $item) :?>
 <?	if(CountVCat($item['id'])>5) {?>
-	<a itemprop="url" title="Категория вопросов &laquo;<?=$item['name']?>&raquo;" style="display:block" class="ptb3 tdn gray fwb trans" href="/Вопросы/<?=$item['name']?>"><span class="bb bbt"><?=$item['name']?></span><span title="В популярной категории <?=$item['name']?> задано <?=CountVCat($item['id'])?> вопросов" class="fwb help green"> (<?=CountVCat($item['id'])?>)</span><?if(NewVopr($item['id'])>0){?><span title="Количество новых вопросов, добавленных за последние 24 часа" class="green fs10 help">&nbsp;+<?=NewVopr($item['id']);?></span><?}?><span title="Средний процент правильных ответов на вопроы категории" class="r_bl fwb help red fs10"><?=number_format(SlogVCat($item['id']),2)?>%<span></a>
+	<a itemprop="url" role="link" title="Категория вопросов &laquo;<?=$item['name']?>&raquo;" style="display:block" class="ptb3 tdn gray fwb trans" href="/Вопросы/<?=$item['name']?>"><span class="bb bbt"><?=$item['name']?></span><span title="В популярной категории <?=$item['name']?> задано <?=CountVCat($item['id'])?> вопросов" class="fwb help green"> (<?=CountVCat($item['id'])?>)</span><?if(NewVopr($item['id'])>0){?><span title="Количество новых вопросов, добавленных за последние 24 часа" class="green fs10 help">&nbsp;+<?=NewVopr($item['id']);?></span><?}?><span title="Средний процент правильных ответов на вопроы категории" class="r_bl fwb help red fs10"><?=number_format(SlogVCat($item['id']),2)?>%<span></a>
 <? } ?>
 <?	endforeach; ?>
 <?	endif; ?>
 </nav>
-	<a itemprop="url" class="fwb fs10 bb tdn green" title="Карта сайта" href="/Карта_сайта">Карта сайта</a>
+	<a itemprop="url" role="link" class="fwb fs10 bb tdn green" title="Карта сайта" href="Карта_сайта">Карта сайта</a>
 <? } ?>
 <?	if($_GET['name_c']&&!$_GET['id']) {
 	$id_cat=GetNameCat($_GET['name_c']);

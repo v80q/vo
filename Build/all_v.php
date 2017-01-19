@@ -129,7 +129,6 @@
 <script type="text/javascript">$(function(){VK.init({apiId: 5501972,onlyWidgets:false});});</script>
 <? } ?>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
-<? require_once "lib/countersm.php";?>
 </head>
 <body>
 <? require_once "lib/main.menu.php"; ?>
@@ -158,7 +157,7 @@
 		<div><a class="fwb fs10 bb tdn green" title="Карта сайта" href="/Карта_сайта">Карта сайта</a></div>
 	</div>
 	<? } ?>
-	<div class="srsr ser2">
+	<div class="srsr ser2" role="search">
 		<svg onclick="del_bl('.ser2')" class="closdiv cur pa hov_d trans cur"  viewBox="0 0 612 612"><polygon fill="rgba(222,81,74,1)" points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397 306,341.411 576.521,611.397 612,575.997 341.459,306.011"/></svg>
 		<? require_once "lib/search.php"; ?>
 	</div>
@@ -194,8 +193,8 @@
 <? } ?>
 	</div>
 </div>
-<div class="vopr_block mtop">
-<div class="row dspn show_at_start"><div class="vopros_add trans" onclick="show('add_v','body')"><div class="addvoprv"><p class="addvopr fwb p10 trans" title="Добавьте вопрос и получайте очки за неправильные ответы!">+ Добавить вопрос</p></div></div></div>
+<div class="vopr_block mtop" role="main">
+<div class="row dspn show_at_start" role="button"><div class="vopros_add trans" onclick="show('add_v','body')"><div class="addvoprv"><p class="addvopr fwb p10 trans" title="Добавьте вопрос и получайте очки за неправильные ответы!">+ Добавить вопрос</p></div></div></div>
 <? if($_GET['id']) {include('lib/load_v_id.php');}?>
 </div>
 <? if(!$_SESSION['nepokaz']) {include('lib/podskazka.php');}?>

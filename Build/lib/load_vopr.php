@@ -127,8 +127,8 @@ else {
 	$ava=$imgUs['image']; 
 }
 ?>
-	<div class="ava cur help">
-		<img class="imgava ava_<?=$item['id']?>_id" onclick="show_ac('<?=$imgUs['login']?>')" title="Статистика участника <?=$imgUs['login']?>" src="https://xn--80adsajtfqq.xn--80asehdb/images/account/<?=$ava?>" />
+	<div class="ava cur <?if($item['id_user']!=160) {?>help<?}?>">
+		<img class="imgava ava_<?=$item['id']?>_id" <?if($item['id_user']!=160) {?>onclick="show_ac('<?=$imgUs['login']?>')" title="Статистика участника <?=$imgUs['login']?>"<?}?> src="https://xn--80adsajtfqq.xn--80asehdb/images/account/<?=$ava?>" />
 	</div>
 <?
 if($item['vk'] == 1) {

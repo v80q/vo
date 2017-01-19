@@ -1,7 +1,7 @@
 <?	
-	session_start();
-	include('lib/function.php');
-	include('lib/counters.php');
+session_start();
+include('lib/function.php');
+include('lib/counters.php');
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -27,38 +27,36 @@
 <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="taz mob w100" role="navigation" >
-	<a itemprop="url" class="tdn trans fwb gray fs18" href="Вопросы" title="Вопросы">Вопросы<noindex><span title="Количество новых вопросов, добавленных за последние 24 часа" class="pa green fs10 newdata help">+<?echo NewVopr();?></span></noindex></a>
-	<a itemprop="url" class="tdn trans fwb gray fs18" href="Участники" title="Участники">Участники<?if(NewUser()){?><noindex><span title="Количество новых участников, зарегистрировавшихся за последние 24 часа" class="pa green fs10 newdata help">+<?echo NewUser();?></span></noindex><?}?></a>
-	<a itemprop="url" class="tdn trans fwb gray fs18" href="Контакты" title="Контакты">Контакты</a>
+	<a itemprop="url" role="link" class="tdn trans fwb gray fs18" href="Вопросы" title="Вопросы">Вопросы<noindex><span title="Количество новых вопросов, добавленных за последние 24 часа" class="pa green fs10 newdata help">+<?echo NewVopr();?></span></noindex></a>
+	<a itemprop="url" role="link" class="tdn trans fwb gray fs18" href="Участники" title="Участники">Участники<?if(NewUser()){?><noindex><span title="Количество новых участников, зарегистрировавшихся за последние 24 часа" class="pa green fs10 newdata help">+<?echo NewUser();?></span></noindex><?}?></a>
+	<a itemprop="url" role="link" class="tdn trans fwb gray fs18" href="Контакты" title="Контакты">Контакты</a>
 </nav>
-<div class="w100 h100">
-<div class="pa center">
-	<div class="w100 taz">
-		<h1>Викторина Онлайн</h1>
-		<noindex><a class="b dib cur tdn trans fs18 gray brad" title="Играть" href="Вопросы">Играть</a></noindex>
-		<? if(!$_SESSION['login']) { ?>
-		<noindex><a class="b dib cur tdn trans fs18 gray brad" title="Авторизация" onclick="show('log','body')">Авторизация</a></noindex>
-		<? } ?>
-		<h2 class="gray fs12 mob p10 w60">
-			Представляем вам интеллектуальную игру онлайн без регистрации. Здесь вы&nbsp;найдете много интересного: научные факты, головоломки, логические загадки и&nbsp;сложные вопросы с&nbsp;подвохом. На&nbsp;нашем сайте вы&nbsp;можете обнаружить и&nbsp;шуточные, провокационные задания. На&nbsp;каждый каверзный вопрос даны четыре варианта ответа, из&nbsp;которых требуется выбрать лишь один, правильный. Задать свои вопросы и&nbsp;проверить чужие ответы может любой участник!
-		</h2>
-		<div class="fs20 fwb mob">
-			<span class="dib green">Участники викторины дали&nbsp;</span>
-				<div class="odometer red">10000</div>
-			<span class="dib green">&nbsp;ответов!</span>
+<div class="w100 h100" role="main">
+	<div class="pa center">
+		<div class="w100 taz">
+			<h1 role="heading">Викторина Онлайн</h1>
+			<a class="b dib cur tdn trans fs18 gray brad" title="Играть" role="link" href="Вопросы">Играть</a>
+			<? if(!$_SESSION['login']) { ?>
+			<a class="b dib cur tdn trans fs18 gray brad" title="Авторизация" role="button" onclick="show('log','body')">Авторизация</a>
+			<? } ?>
+			<h2 role="main" class="gray fs12 mob p10 w60">Представляем вам интеллектуальную игру онлайн без регистрации. Здесь вы&nbsp;найдете много интересного: научные факты, головоломки, логические загадки и&nbsp;сложные вопросы с&nbsp;подвохом. На&nbsp;нашем сайте вы&nbsp;можете обнаружить и&nbsp;шуточные, провокационные задания. На&nbsp;каждый каверзный вопрос даны четыре варианта ответа, из&nbsp;которых требуется выбрать лишь один, правильный. Задать свои вопросы и&nbsp;проверить чужие ответы может любой участник!</h2>
+			<div class="fs20 fwb mob">
+				<span class="dib green">Участники викторины дали&nbsp;</span>
+				<div class="dib odometer red">10000</div>
+				<span class="dib green">&nbsp;ответов!</span>
+			</div>
 		</div>
 	</div>
-</div>
 </div>
 <div class="w100 taz mob pa foot">
 	<div class="l_bl p30">
 		<p class="name fs16 fwb gray">&copy;Викторина.Онлайн 2016</p>
-		<a class="map trans cur tdn fwb gray" title="Карта сайта" href="Карта_сайта">Карта сайта</a>
+		<a class="map trans cur tdn fwb gray" role="link" title="Карта сайта" href="Карта_сайта">Карта сайта</a>
 	</div>
 	<div class="r_bl p30">
-		<a id="l_fb" class="trans brad" title="Группа в Facebook" target="_blank" href="https://www.facebook.com/viktorina.online/"></a>
-		<a id="l_ok" class="trans brad" title="Группа в Одноклассники" target="_blank" href="https://ok.ru/group/52718353252445"></a>
-		<a id="l_vk" class="trans brad" title="Группа в ВКонтакте" target="_blank" href="https://vk.com/viktorina.online"></a>
+		<a id="l_fb" class="trans brad" role="link" title="Группа в Facebook" target="_blank" href="https://www.facebook.com/viktorina.online/"></a>
+		<a id="l_ok" class="trans brad" role="link" title="Группа в Одноклассники" target="_blank" href="https://ok.ru/group/52718353252445"></a>
+		<a id="l_vk" class="trans brad" role="link" title="Группа в ВКонтакте" target="_blank" href="https://vk.com/viktorina.online"></a>
 	</div>
 </div>
 <script src="js/jquery-1.12.2.min.js"></script>
