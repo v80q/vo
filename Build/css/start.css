@@ -62,6 +62,6 @@ nav a:hover,.map:hover{color:rgb(222,81,74)}
 .l_bl{float:left}
 .r_bl{float:right}
 @media screen and (max-width: 737px) {
-    h1{font-size:27px}
+    h1{font-size:22px}
     .mob{display:none}
 }

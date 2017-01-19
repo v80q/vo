@@ -27,7 +27,7 @@ include('lib/counters.php');
 <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="taz mob w100" role="navigation" >
-	<a itemprop="url" role="link" class="tdn trans fwb gray fs18" href="Вопросы" title="Вопросы">Вопросы<noindex><span title="Количество новых вопросов, добавленных за последние 24 часа" class="pa green fs10 newdata help">+<?echo NewVopr();?></span></noindex></a>
+	<a itemprop="url" role="link" class="tdn trans fwb gray fs18" href="Вопросы" title="Вопросы">Вопросы<?if(NewVopr()){?><noindex><span title="Количество новых вопросов, добавленных за последние 24 часа" class="pa green fs10 newdata help">+<?echo NewVopr();?></span></noindex><?}?></a>
 	<a itemprop="url" role="link" class="tdn trans fwb gray fs18" href="Участники" title="Участники">Участники<?if(NewUser()){?><noindex><span title="Количество новых участников, зарегистрировавшихся за последние 24 часа" class="pa green fs10 newdata help">+<?echo NewUser();?></span></noindex><?}?></a>
 	<a itemprop="url" role="link" class="tdn trans fwb gray fs18" href="Контакты" title="Контакты">Контакты</a>
 </nav>
