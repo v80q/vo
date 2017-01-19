@@ -1,5 +1,5 @@
 body{line-height:1.6}
-body,dl,dt,dd,h1,h2,h3,h4,h5,h6,a,div,pre,form,fieldset,textarea,p,blockquote,th,td,b,li{font-family:Verdana,Georgia;padding:0;margin:0;box-sizing:border-box;outline:none}
+body,dl,dt,dd,a,div,pre,form,fieldset,textarea,p,blockquote,th,td,b,li{font-family:Verdana,Georgia;padding:0;margin:0;box-sizing:border-box;outline:none}
 #l_vk,#l_ok,#l_fb{margin:3px;width:40px;height:40px;display:inline-block;background-color:rgb(102,102,102);background-size:cover;background-position:center center;background-repeat:no-repeat}
 #l_vk{background-image:url(../images/Mezhdunarodny_logotip_VK.png)}
 #l_ok{background-image:url(../images/ok_logo_sign_orange.png)}
@@ -28,8 +28,11 @@ body,dl,dt,dd,h1,h2,h3,h4,h5,h6,a,div,pre,form,fieldset,textarea,p,blockquote,th
 .fwb{font-weight:700}
 .dib{display:inline-block}
 .w100{width:100%}
+.h100{height:100%}
 .w80{width:80%}
+.w60{width:60%}
 .pa{position:absolute}
+.pr{position:relative}
 .tdn{text-decoration:none}
 .trans{-webkit-transition:.5s;transition:.5s}
 .p10{padding:10px}
@@ -46,16 +49,19 @@ body{background:#dbdbdb}
 .fs12{font-size:12px}
 .addvopr_promo{background:rgba(64,130,109,1);font-weight:700;color:#fff;border:1px solid rgba(64,130,109,1);-webkit-transition:.5s;transition:.5s;-webkit-box-shadow:0 3px 15px gray;-moz-box-shadow:0 3px 15px gray;box-shadow:0 3px 15px gray;width:auto;display:inline-block;text-decoration:none;margin:5px;padding:3px 15px;cursor:pointer;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-khtml-border-radius:3px}
 .addvopr_promo:hover{background:#fff;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;color:rgba(64,130,109,1)}
-h1{font-size:60px}
-.b{line-height:2em;background:rgba(255,255,255,.7);height:2em;width:15em;border:1px solid #666;margin:1em}
+h1{font-size:60px;margin:0;padding:0}
+h2{margin:0 auto}
+.b{line-height:2em;background:rgb(255,255,255);opacity:.7;width:15em;border:1px solid #666;margin:1.5em}
 .b:hover{color:rgb(64,130,109);border:1px solid rgb(64,130,109);box-shadow:2px 2px 5px #999}
 nav{margin-top:30px}
 nav a{margin:15px}
 nav a:hover,.map:hover{color:rgb(222,81,74)}
 .map,.name{margin:3px}
+.center{top: 50%;transform: translateY(-50%)}
+.foot{bottom:1%}
 .l_bl{float:left}
 .r_bl{float:right}
 @media screen and (max-width: 737px) {
-h1{font-size:27px}
-.mob{display:none}
+    h1{font-size:27px}
+    .mob{display:none}
 }
