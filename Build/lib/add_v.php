@@ -9,7 +9,7 @@
 	<div class="dm-table w100">
 		<div class="dm-cell">
 			<div class="dm-modal w100">
-				<svg onclick="del_bl('#add_v')" class="closdiv cur pa hov_d trans" viewBox="0 0 612 612"><polygon fill="rgba(222,81,74,1)" points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397 306,341.411 576.521,611.397 612,575.997 341.459,306.011"/></svg>
+				<svg onclick="del_bl('#add_v')" role="img" class="closdiv cur pa hov_d trans"><use xlink:href="#closdiv"></use></svg>
 				<form class="p10 w100" method="POST" action="" enctype="multipart/form-data" onsubmit="spasibo()">				
 					<? if(!$_SESSION["login"]) { echo '<div class="fd mob"><p class="red fwb p10">Вы не авторизованы, поэтому вопрос будет опубликован от имени администратора!</p></div>'; } ?>
 					<div class="fd">
