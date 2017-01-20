@@ -131,7 +131,7 @@ else {
 	<?if($item['id_user']!=160) {?>
 		<img class="imgava ava_<?=$item['id']?>_id" onclick="show_ac('<?=$imgUs['login']?>')" title="Статистика участника <?=$imgUs['login']?>" src="https://xn--80adsajtfqq.xn--80asehdb/images/account/<?=$ava?>" />
 	<?} else {?>
-		<svg role="img" class="imgava ava_<?=$item['id']?>_id"><use xlink:href="#ava_admin"></use></svg>
+		<svg role="img" class="imgava2 ava_<?=$item['id']?>_id"><use xlink:href="#ava_admin"></use></svg>
 	<?}?>
 	</div>
 <?
